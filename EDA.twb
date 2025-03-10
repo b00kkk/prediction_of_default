@@ -1,0 +1,2458 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='train' inline='true' name='federated.16qb4rn00r37lz146tvln162iheq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='train' name='textscan.1yt40s81edjrhh1b01zsu1o90jrm'>
+            <connection class='textscan' directory='C:/Users/boo/Downloads/open' filename='train.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1yt40s81edjrhh1b01zsu1o90jrm' name='train.csv' table='[train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='UID' ordinal='0' />
+            <column datatype='string' name='주거 형태' ordinal='1' />
+            <column datatype='real' name='연간 소득' ordinal='2' />
+            <column datatype='string' name='현재 직장 근속 연수' ordinal='3' />
+            <column datatype='real' name='체납 세금 압류 횟수' ordinal='4' />
+            <column datatype='integer' name='개설된 신용계좌 수' ordinal='5' />
+            <column datatype='real' name='신용 거래 연수' ordinal='6' />
+            <column datatype='real' name='최대 신용한도' ordinal='7' />
+            <column datatype='integer' name='신용 문제 발생 횟수' ordinal='8' />
+            <column datatype='integer' name='마지막 연체 이후 경과 개월 수' ordinal='9' />
+            <column datatype='integer' name='개인 파산 횟수' ordinal='10' />
+            <column datatype='string' name='대출 목적' ordinal='11' />
+            <column datatype='string' name='대출 상환 기간' ordinal='12' />
+            <column datatype='real' name='현재 대출 잔액' ordinal='13' />
+            <column datatype='real' name='현재 미상환 신용액' ordinal='14' />
+            <column datatype='real' name='월 상환 부채액' ordinal='15' />
+            <column datatype='integer' name='신용 점수' ordinal='16' />
+            <column datatype='integer' name='채무 불이행 여부' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UID]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>UID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주거 형태</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[주거 형태]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>주거 형태</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연간 소득</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[연간 소득]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>연간 소득</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>현재 직장 근속 연수</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[현재 직장 근속 연수]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>현재 직장 근속 연수</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>체납 세금 압류 횟수</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[체납 세금 압류 횟수]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>체납 세금 압류 횟수</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>개설된 신용계좌 수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[개설된 신용계좌 수]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>개설된 신용계좌 수</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>신용 거래 연수</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[신용 거래 연수]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>신용 거래 연수</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>최대 신용한도</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[최대 신용한도]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>최대 신용한도</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>신용 문제 발생 횟수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[신용 문제 발생 횟수]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>신용 문제 발생 횟수</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>마지막 연체 이후 경과 개월 수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[마지막 연체 이후 경과 개월 수]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>마지막 연체 이후 경과 개월 수</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>개인 파산 횟수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[개인 파산 횟수]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>개인 파산 횟수</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>대출 목적</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[대출 목적]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>대출 목적</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>대출 상환 기간</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[대출 상환 기간]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>대출 상환 기간</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>현재 대출 잔액</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[현재 대출 잔액]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>현재 대출 잔액</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>현재 미상환 신용액</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[현재 미상환 신용액]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>현재 미상환 신용액</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>월 상환 부채액</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[월 상환 부채액]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>월 상환 부채액</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>신용 점수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[신용 점수]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>신용 점수</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>채무 불이행 여부</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[채무 불이행 여부]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>채무 불이행 여부</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='채무 불이행 여부_' datatype='string' name='[Calculation_573364582992764928]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IIF([채무 불이행 여부]=1,&apos;채무 불이행&apos;,&apos;정상 상환&apos;)' />
+      </column>
+      <column datatype='string' name='[UID]' role='dimension' type='nominal' />
+      <column caption='train.csv' datatype='table' name='[__tableau_internal_object_id__].[train.csv_79846A178F884740893A6FBD27FD4E9C]' role='measure' type='quantitative' />
+      <column datatype='string' name='[대출 목적]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[신용 점수(구간차원)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[신용 점수]' peg='0' size='16.7' />
+      </column>
+      <column datatype='integer' name='[신용 점수]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_573364582992764928]' derivation='None' name='[none:Calculation_573364582992764928:nk]' pivot='key' type='nominal' />
+      <column-instance column='[대출 목적]' derivation='None' name='[none:대출 목적:nk]' pivot='key' type='nominal' />
+      <group caption='동작(UID)' hidden='true' name='[Action (UID)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[UID]' />
+        </groupfilter>
+      </group>
+      <group caption='동작(UID,대출 목적)' hidden='true' name='[Action (UID,대출 목적)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[UID]' />
+          <groupfilter function='level-members' level='[대출 목적]' />
+        </groupfilter>
+      </group>
+      <group caption='동작(대출 목적)' hidden='true' name='[Action (대출 목적)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[대출 목적]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/boo/AppData/Local/Temp/TableauTemp/#TableauTemp_13m5ypv04csdah17izsb11l6zln4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/10/2025 06:12:24 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>UID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[UID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>주거 형태</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[주거 형태]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>주거 형태</remote-alias>
+              <ordinal>1</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>연간 소득</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[연간 소득]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>연간 소득</remote-alias>
+              <ordinal>2</ordinal>
+              <family>train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>현재 직장 근속 연수</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[현재 직장 근속 연수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>현재 직장 근속 연수</remote-alias>
+              <ordinal>3</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>체납 세금 압류 횟수</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[체납 세금 압류 횟수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>체납 세금 압류 횟수</remote-alias>
+              <ordinal>4</ordinal>
+              <family>train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>개설된 신용계좌 수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[개설된 신용계좌 수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>개설된 신용계좌 수</remote-alias>
+              <ordinal>5</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>신용 거래 연수</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[신용 거래 연수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>신용 거래 연수</remote-alias>
+              <ordinal>6</ordinal>
+              <family>train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>440</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>최대 신용한도</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[최대 신용한도]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>최대 신용한도</remote-alias>
+              <ordinal>7</ordinal>
+              <family>train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9387</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>신용 문제 발생 횟수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[신용 문제 발생 횟수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>신용 문제 발생 횟수</remote-alias>
+              <ordinal>8</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>마지막 연체 이후 경과 개월 수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[마지막 연체 이후 경과 개월 수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>마지막 연체 이후 경과 개월 수</remote-alias>
+              <ordinal>9</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>95</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>개인 파산 횟수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[개인 파산 횟수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>개인 파산 횟수</remote-alias>
+              <ordinal>10</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>대출 목적</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[대출 목적]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>대출 목적</remote-alias>
+              <ordinal>11</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>대출 상환 기간</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[대출 상환 기간]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>대출 상환 기간</remote-alias>
+              <ordinal>12</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>현재 대출 잔액</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[현재 대출 잔액]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>현재 대출 잔액</remote-alias>
+              <ordinal>13</ordinal>
+              <family>train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9203</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>현재 미상환 신용액</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[현재 미상환 신용액]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>현재 미상환 신용액</remote-alias>
+              <ordinal>14</ordinal>
+              <family>train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9152</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>월 상환 부채액</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[월 상환 부채액]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>월 상환 부채액</remote-alias>
+              <ordinal>15</ordinal>
+              <family>train.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5759</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>신용 점수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[신용 점수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>신용 점수</remote-alias>
+              <ordinal>16</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>165</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>채무 불이행 여부</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[채무 불이행 여부]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>채무 불이행 여부</remote-alias>
+              <ordinal>17</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_79846A178F884740893A6FBD27FD4E9C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-hidden-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_573364582992764928:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;정상 상환&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;채무 불이행&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:대출 목적:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;의료비&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;결혼 자금&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;부채 통합&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;주택 구매&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;이사 비용&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;사업 대출&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;고액 구매&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;소규모 사업 자금&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;휴가 비용&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;자동차 구매&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;여행 자금&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;교육비&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;주택 개보수&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;기타&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='UID' />
+        <field-sort-custom-order field='주거 형태' />
+        <field-sort-custom-order field='연간 소득' />
+        <field-sort-custom-order field='현재 직장 근속 연수' />
+        <field-sort-custom-order field='체납 세금 압류 횟수' />
+        <field-sort-custom-order field='개설된 신용계좌 수' />
+        <field-sort-custom-order field='신용 거래 연수' />
+        <field-sort-custom-order field='최대 신용한도' />
+        <field-sort-custom-order field='신용 문제 발생 횟수' />
+        <field-sort-custom-order field='마지막 연체 이후 경과 개월 수' />
+        <field-sort-custom-order field='개인 파산 횟수' />
+        <field-sort-custom-order field='대출 목적' />
+        <field-sort-custom-order field='대출 상환 기간' />
+        <field-sort-custom-order field='현재 대출 잔액' />
+        <field-sort-custom-order field='현재 미상환 신용액' />
+        <field-sort-custom-order field='월 상환 부채액' />
+        <field-sort-custom-order field='신용 점수' />
+        <field-sort-custom-order field='채무 불이행 여부' />
+        <field-sort-custom-order field='Calculation_573364582992764928' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='train.csv' id='train.csv_79846A178F884740893A6FBD27FD4E9C'>
+            <properties context=''>
+              <relation connection='textscan.1yt40s81edjrhh1b01zsu1o90jrm' name='train.csv' table='[train#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='UID' ordinal='0' />
+                  <column datatype='string' name='주거 형태' ordinal='1' />
+                  <column datatype='real' name='연간 소득' ordinal='2' />
+                  <column datatype='string' name='현재 직장 근속 연수' ordinal='3' />
+                  <column datatype='real' name='체납 세금 압류 횟수' ordinal='4' />
+                  <column datatype='integer' name='개설된 신용계좌 수' ordinal='5' />
+                  <column datatype='real' name='신용 거래 연수' ordinal='6' />
+                  <column datatype='real' name='최대 신용한도' ordinal='7' />
+                  <column datatype='integer' name='신용 문제 발생 횟수' ordinal='8' />
+                  <column datatype='integer' name='마지막 연체 이후 경과 개월 수' ordinal='9' />
+                  <column datatype='integer' name='개인 파산 횟수' ordinal='10' />
+                  <column datatype='string' name='대출 목적' ordinal='11' />
+                  <column datatype='string' name='대출 상환 기간' ordinal='12' />
+                  <column datatype='real' name='현재 대출 잔액' ordinal='13' />
+                  <column datatype='real' name='현재 미상환 신용액' ordinal='14' />
+                  <column datatype='real' name='월 상환 부채액' ordinal='15' />
+                  <column datatype='integer' name='신용 점수' ordinal='16' />
+                  <column datatype='integer' name='채무 불이행 여부' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='필터1' name='[Action1_52114E7ACECA46E4A83E894881371226]'>
+      <activation type='on-select' />
+      <source dashboard='EDA' type='sheet' worksheet='연간소득 vs 신용점수' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='대출 목적별 평균 신용점수,신용점수 분포,연간소득 vs 신용점수,채무 불이행 여부' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='EDA' />
+      </command>
+    </action>
+    <action caption='필터2' name='[Action2_340EA141FE6741DCB3FEE49CAC441D18]'>
+      <activation type='on-select' />
+      <source dashboard='EDA' type='sheet' worksheet='대출 목적별 평균 신용점수' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='대출 목적별 평균 신용점수,신용점수 분포,신용한도 vs 미상환 신용액,채무 불이행 여부' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='EDA' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='대출 목적별 평균 신용점수'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;&#10;</run>
+            <run fontalignment='1' fontsize='10'>대출목적을 클릭하시면 해당 목적의 신용점수 분포 확인 가능합니다</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train' name='federated.16qb4rn00r37lz146tvln162iheq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16qb4rn00r37lz146tvln162iheq'>
+            <column-instance column='[신용 점수]' derivation='Avg' name='[avg:신용 점수:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[대출 목적]' derivation='None' name='[none:대출 목적:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[대출 목적]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[신용 점수]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.16qb4rn00r37lz146tvln162iheq].[avg:신용 점수:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]</rows>
+        <cols>[federated.16qb4rn00r37lz146tvln162iheq].[avg:신용 점수:qk]</cols>
+      </table>
+      <simple-id uuid='{557C0C65-7E3D-4C5B-95EA-799E2003D039}' />
+    </worksheet>
+    <worksheet name='신용점수 분포'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train' name='federated.16qb4rn00r37lz146tvln162iheq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16qb4rn00r37lz146tvln162iheq'>
+            <column caption='채무 불이행 여부_' datatype='string' name='[Calculation_573364582992764928]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IIF([채무 불이행 여부]=1,&apos;채무 불이행&apos;,&apos;정상 상환&apos;)' />
+            </column>
+            <column-instance column='[신용 점수]' derivation='Count' name='[cnt:신용 점수:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_573364582992764928]' derivation='None' name='[none:Calculation_573364582992764928:nk]' pivot='key' type='nominal' />
+            <column-instance column='[신용 점수(구간차원)]' derivation='None' name='[none:신용 점수(구간차원):qk]' pivot='key' type='quantitative' />
+            <column aggregation='None' datatype='integer' name='[신용 점수(구간차원)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[신용 점수]' peg='0' size='16.7' />
+            </column>
+            <column datatype='integer' name='[신용 점수]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[채무 불이행 여부]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.16qb4rn00r37lz146tvln162iheq].[none:Calculation_573364582992764928:nk]' />
+              <text column='[federated.16qb4rn00r37lz146tvln162iheq].[cnt:신용 점수:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16qb4rn00r37lz146tvln162iheq].[cnt:신용 점수:qk]</rows>
+        <cols>[federated.16qb4rn00r37lz146tvln162iheq].[none:신용 점수(구간차원):qk]</cols>
+        <show-full-range>
+          <column>[federated.16qb4rn00r37lz146tvln162iheq].[신용 점수(구간차원)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{7032146F-E0C2-4AC4-BBA1-E64CE48CE503}' />
+    </worksheet>
+    <worksheet name='신용한도 vs 미상환 신용액'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train' name='federated.16qb4rn00r37lz146tvln162iheq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16qb4rn00r37lz146tvln162iheq'>
+            <column datatype='string' name='[UID]' role='dimension' type='nominal' />
+            <column-instance column='[UID]' derivation='None' name='[none:UID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[최대 신용한도]' derivation='Sum' name='[sum:최대 신용한도:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[현재 미상환 신용액]' derivation='Sum' name='[sum:현재 미상환 신용액:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[대출 목적]' role='dimension' type='nominal' />
+            <column datatype='real' name='[최대 신용한도]' role='measure' type='quantitative' />
+            <column datatype='real' name='[현재 미상환 신용액]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16qb4rn00r37lz146tvln162iheq].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16qb4rn00r37lz146tvln162iheq].[sum:최대 신용한도:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.16qb4rn00r37lz146tvln162iheq].[sum:현재 미상환 신용액:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.16qb4rn00r37lz146tvln162iheq].[Action (UID,대출 목적)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_52114E7ACECA46E4A83E894881371226]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[UID]' member='&quot;TRAIN_04325&quot;' />
+              <groupfilter function='member' level='[대출 목적]' member='&quot;결혼 자금&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.16qb4rn00r37lz146tvln162iheq].[:Measure Names]</column>
+            <column>[federated.16qb4rn00r37lz146tvln162iheq].[Action (UID,대출 목적)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16qb4rn00r37lz146tvln162iheq].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.16qb4rn00r37lz146tvln162iheq].[none:UID:nk] / [federated.16qb4rn00r37lz146tvln162iheq].[:Measure Names])</rows>
+        <cols>[federated.16qb4rn00r37lz146tvln162iheq].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{7611124B-7578-4FE6-AC34-F3E83D2255C3}' />
+    </worksheet>
+    <worksheet name='연간소득 vs 신용점수'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;&#10;</run>
+            <run fontalignment='1' fontsize='10'>마크를 클릭하면 각 UID의 최대 신용한도와 현재 미상환 신용액 확인 가능합니다.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train' name='federated.16qb4rn00r37lz146tvln162iheq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16qb4rn00r37lz146tvln162iheq'>
+            <column datatype='string' name='[UID]' role='dimension' type='nominal' />
+            <column-instance column='[UID]' derivation='None' name='[none:UID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[대출 목적]' derivation='None' name='[none:대출 목적:nk]' pivot='key' type='nominal' />
+            <column-instance column='[신용 점수]' derivation='Sum' name='[sum:신용 점수:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[연간 소득]' derivation='Sum' name='[sum:연간 소득:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[대출 목적]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[신용 점수]' role='measure' type='quantitative' />
+            <column datatype='real' name='[연간 소득]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16qb4rn00r37lz146tvln162iheq].[Action (대출 목적)]'>
+            <groupfilter function='member' level='[대출 목적]' member='&quot;결혼 자금&quot;' user:ui-action-filter='[Action2_340EA141FE6741DCB3FEE49CAC441D18]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16qb4rn00r37lz146tvln162iheq].[Action (대출 목적)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.16qb4rn00r37lz146tvln162iheq].[sum:신용 점수:qk]' field-type='quantitative' max='871' min='400' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]' />
+              <lod column='[federated.16qb4rn00r37lz146tvln162iheq].[none:UID:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.16qb4rn00r37lz146tvln162iheq].[sum:연간 소득:qk]</rows>
+        <cols>[federated.16qb4rn00r37lz146tvln162iheq].[sum:신용 점수:qk]</cols>
+      </table>
+      <simple-id uuid='{4E1EA006-9E43-46C9-9DD6-3B169073A11F}' />
+    </worksheet>
+    <worksheet name='채무 불이행 여부'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train' name='federated.16qb4rn00r37lz146tvln162iheq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16qb4rn00r37lz146tvln162iheq'>
+            <column caption='채무 불이행 여부_' datatype='string' name='[Calculation_573364582992764928]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IIF([채무 불이행 여부]=1,&apos;채무 불이행&apos;,&apos;정상 상환&apos;)' />
+            </column>
+            <column datatype='string' name='[UID]' role='dimension' type='nominal' />
+            <column-instance column='[UID]' derivation='Count' name='[cnt:UID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_573364582992764928]' derivation='None' name='[none:Calculation_573364582992764928:nk]' pivot='key' type='nominal' />
+            <column-instance column='[UID]' derivation='Count' name='[pcto:cnt:UID:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column datatype='integer' name='[채무 불이행 여부]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.16qb4rn00r37lz146tvln162iheq].[none:Calculation_573364582992764928:nk]' />
+              <wedge-size column='[federated.16qb4rn00r37lz146tvln162iheq].[cnt:UID:qk]' />
+              <size column='[federated.16qb4rn00r37lz146tvln162iheq].[cnt:UID:qk]' />
+              <text column='[federated.16qb4rn00r37lz146tvln162iheq].[pcto:cnt:UID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D376543C-6585-4ABA-AAE2-89E0D7FDF288}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='EDA'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;</run>
+            <run fontalignment='1'>Sheet Name</run>
+            <run fontalignment='1'>&gt;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98736' id='19' param='vert' type-v2='layout-flow' w='99286' x='357' y='632'>
+            <zone h='4581' id='20' type-v2='title' w='99286' x='357' y='632'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='94155' id='17' type-v2='layout-basic' w='99286' x='357' y='5213'>
+              <zone h='47077' id='7' param='horz' type-v2='layout-flow' w='99286' x='357' y='5213'>
+                <zone h='47077' id='5' type-v2='layout-basic' w='99286' x='357' y='5213'>
+                  <zone h='47077' id='15' name='신용한도 vs 미상환 신용액' show-title='false' w='30748' x='68895' y='5213'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='47077' id='11' name='대출 목적별 평균 신용점수' w='36319' x='357' y='5213'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='47077' id='9' name='연간소득 vs 신용점수' w='32219' x='36676' y='5213'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='47078' id='13' name='채무 불이행 여부' w='24822' x='357' y='52290'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='47078' id='3' name='신용점수 분포' w='74464' x='25179' y='52290'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6003' id='8' name='신용점수 분포' pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[none:Calculation_573364582992764928:nk]' type-v2='color' w='6239' x='18093' y='53081' />
+        <zone h='6003' id='16' name='신용한도 vs 미상환 신용액' pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[:Measure Names]' type-v2='color' w='8155' x='72103' y='869' />
+        <zone h='12164' id='10' name='연간소득 vs 신용점수' pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]' type-v2='color' w='7353' x='41667' y='12954' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1'>&lt;</run>
+                <run fontalignment='1'>Sheet Name</run>
+                <run fontalignment='1'>&gt;&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98736' id='21' param='vert' type-v2='layout-flow' w='99286' x='357' y='632'>
+                <zone h='4581' id='20' type-v2='title' w='99286' x='357' y='632'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47077' id='11' is-fixed='true' name='대출 목적별 평균 신용점수' w='36319' x='357' y='5213'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47077' id='9' is-fixed='true' name='연간소득 vs 신용점수' w='32219' x='36676' y='5213'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12164' id='10' name='연간소득 vs 신용점수' pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]' type-v2='color' w='7353' x='41667' y='12954'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47077' id='15' is-fixed='true' name='신용한도 vs 미상환 신용액' show-title='false' w='30748' x='68895' y='5213'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6003' id='16' name='신용한도 vs 미상환 신용액' pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[:Measure Names]' type-v2='color' w='8155' x='72103' y='869'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47078' id='13' is-fixed='true' name='채무 불이행 여부' w='24822' x='357' y='52290'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47078' id='3' is-fixed='true' name='신용점수 분포' w='74464' x='25179' y='52290'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6003' id='8' name='신용점수 분포' pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[none:Calculation_573364582992764928:nk]' type-v2='color' w='6239' x='18093' y='53081'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{ACA484C1-98EA-4830-8674-2B4925568DEB}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='신용점수 분포'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[none:Calculation_573364582992764928:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:Calculation_573364582992764928:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{189670E3-0B79-4EA2-975E-3AD10681FE65}' />
+    </window>
+    <window class='worksheet' name='연간소득 vs 신용점수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:UID:nk]</field>
+            <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{08A96055-63C9-4E18-A397-8351F1F8BAA4}' />
+    </window>
+    <window class='worksheet' name='대출 목적별 평균 신용점수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{48F5C8B5-430D-4A0C-B6B8-342CAF5C8684}' />
+    </window>
+    <window class='worksheet' name='채무 불이행 여부'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[none:Calculation_573364582992764928:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[cnt:UID:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:Calculation_573364582992764928:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DB699DD8-368C-443A-8E61-53BD08DD1072}' />
+    </window>
+    <window class='worksheet' name='신용한도 vs 미상환 신용액'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16qb4rn00r37lz146tvln162iheq].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16qb4rn00r37lz146tvln162iheq].[:Measure Names]</field>
+            <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:UID:nk]</field>
+            <field>[federated.16qb4rn00r37lz146tvln162iheq].[sum:최대 신용한도:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8F825356-7028-4536-AFA2-9770FCDCCE15}' />
+    </window>
+    <window class='dashboard' maximized='true' name='EDA'>
+      <viewpoints>
+        <viewpoint name='대출 목적별 평균 신용점수'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.16qb4rn00r37lz146tvln162iheq].[avg:신용 점수:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.16qb4rn00r37lz146tvln162iheq].[avg:신용 점수:qk]</field>
+                    <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>738.92857142857144</value>
+                  <value>&quot;결혼 자금&quot;</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+          <highlight field='[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='신용점수 분포'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:Calculation_573364582992764928:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='신용한도 vs 미상환 신용액'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.16qb4rn00r37lz146tvln162iheq].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='연간소득 vs 신용점수'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.16qb4rn00r37lz146tvln162iheq].[sum:신용 점수:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.16qb4rn00r37lz146tvln162iheq].[sum:연간 소득:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:UID:nk]</field>
+                    <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]</field>
+                    <field>[federated.16qb4rn00r37lz146tvln162iheq].[sum:신용 점수:qk]</field>
+                    <field>[federated.16qb4rn00r37lz146tvln162iheq].[sum:연간 소득:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;TRAIN_04325&quot;</value>
+                  <value>&quot;결혼 자금&quot;</value>
+                  <value>631</value>
+                  <value>1924539.0</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+          <highlight>
+            <color-one-way>
+              <field>[federated.16qb4rn00r37lz146tvln162iheq].[none:대출 목적:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='채무 불이행 여부'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9AC8EDC6-628E-4CF5-A51A-2A094149E16A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='EDA' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='대출 목적별 평균 신용점수' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='신용점수 분포' width='192'>
+      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
+      tgrFAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='신용한도 vs 미상환 신용액' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='연간소득 vs 신용점수' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='채무 불이행 여부' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAJ+UlEQVR4nO3db2wT9x3H8c+dE9txnDiJQ0b+ACXAWFRAlLYbbG3JInWVJsFENWnqg2rr
+      sz2ZNmndJu1Bp2naNFUdq2AtVGMqMImKIJAKU1cgkLZUBJbQAQUSlBQI6hKWxHGwHTv+d789
+      WIlS/oRLcne/c36f1zMS++6LdO/c+Xw+a0IIASJF6bIHIJKJAZDSGAApjQGQ0hgAKY0BkNIY
+      ACmNAZDSGAApjQGQ0hgAKY0BkNIYACmNAZDSGAApjQGQ0hgAKY0BkNIYACmNAZDSGAApjQGQ
+      0hgAKY0BkNIYACmNAZDSGAApjQGQ0hgAKY0BkNIYACmNAZDSGAApjQGQ0hgAKY0BkNIYACmN
+      AZDSGAApjQGQ0hgAKY0BkNIYACmNAZDSGAApjQGQ0hgAKY0BkNIYACmNAZDSGAApjQGQ0hgA
+      KY0BkNIYACmNAZDSGAApjQGQ0hgAKY0BkNIYACmNAZDSGAApjQGQ0hgAKY0BkNIYACmNAZDS
+      GAApjQGQ0hgAKY0BkNIYACmtSPYARE4ThoGJixeRONnOAEgdRjqN8VMfI3G8Ddn+fgDcA5AC
+      jEwG4+0fIHb4CPKRyJd+xwBo3hK5HBIn2xF79/A9G/4dDIDmHWEYmLhwAWOtB5C9fmPaxzIA
+      mldykVFEd+9GqrPL1OMZAM0LwjCQOHoMY/tbISYmTD+PAVDBy41EENmxA+nLV2b8XAZABW38
+      9GlE394DIx6f1fMZABUkkckguu8dJI4eA4SY9XIYABWcXCSCyBtvIn2le87LYgBUUDL9NzH8
+      2mvID49YsjwGQAUj9e/zGNm2HSKVsmyZDIAKwnjHGUTeeBPI5SxdLgMg10u0t2P0r38DDMPy
+      ZTMAcrX40WOI7t4zpzM902EA5EpCCCRPdyC6Z69tGz/AT4SRCwkhkPpXJyI7dtpy2DMVAyDX
+      yfT1IbLzLctf8N4PAyBXyQ4OYmTrny091TkdBkCuYSRTGHl9G/LRMcfWyQDIFYRhYHTXrsnP
+      6jqFAZB0QggkjrchebrD8XUzAJIue6MfY/vekbJuBkBSGakUIjvfgkinpayfAdCMCCGQzWaR
+      zWYn/53P5yd/n8/nIYSAEAKZTGby8UIIGIYBMeVNLSEEbh885Phx/1R8J5hmxDAMdHZ24saN
+      G9i8eTO6uroQjUaxZcsWJJNJtLa2YtOmTRgeHsbQ0BDGxsaQTqexePFiJJNJNDc3Ty4r09uL
+      +PtH5f1nwD0AzZDH40E4HEY8HkcikYDX60VpaSkAIBAIYN26dQCAFStWYGJiAkuWLAEA9Pb2
+      IhKJ4MKFCwAAkc1i9O3djrzZNR3uAWhGMpkMgsEgmpqacOnSJRiGgZ6eHjQ1NaG2thbpdBrp
+      dBptbW2TP1u6dCl6enoQi8UwOjoKAIgfb3voPXucoAlh45VGNO8IIdDT0wOfz4fGxkYYhoF4
+      PI5sNguv14vu7m74fD6EQiEMDQ2hvr4eoVAIJSUlGBwcRFVVFfzZLAZ/8atZf5DdSgyAHCWE
+      QHTPXiQkH/vfwdcA5KjcwAASJ07KHmMSAyDHCCEQe/cw8MUpVDdgAOSY3MAAxjvOyB7jSxgA
+      OUIIgdg/3nPVX3+AAZBD8tEokh3OX+z2MAyAHJE4cXJGd212CgMg2xnpNMY/OiV7jPtiAGS7
+      9OXLyA8Pyx7jvhgA2UoI4arz/ndjAGQrY+w2Ji5dlj3GAzEAslXq/HlpH3YxgwGQbYQQSJ49
+      K3uMaTEAso0RiyHdc1X2GNNiAGSbdF+fK8/9T8UAyDapc5/IHuGhGADZQuTzSHf3yB7joRgA
+      2SI/EkFuaEj2GA/FAMgW6evXgCm3S3ErBkC2yPR9JnsEUxgA2ULmza5mggGQ5UQ2i+x/BmSP
+      YQoDIMvl43Hkb9+WPYYpDIAsl/vvUEG8AAYYANnArdf+3w8DIMvlIhHZI5jGAMhyueER2SOY
+      xgDIcm6456dZDIAsZyQYACnMGE/KHsE0BkCWEkK4+iOQd2MAZC3DgDAK4z0AgAGQ1YQADEP2
+      FKYxAFIaAyBr6Trg8ciewjQGQJbSdB2azgBIYZrfJ3sE0xgAWc5TViZ7BNMYAFlO/+KLswsB
+      AyDL6RUVskcwjQGQ5YrCYdkjmMYAyHJFC6plj2AaAyDLeWpqZI9gGgMgyxVVL4Dm9coewxQG
+      QJbTg6XwhKtkj2EKAyDLabqOooW1sscwhQGQLXyNjbJHMIUBkC18TStlj2AKAyBbFDc0AMXF
+      sseY1lBxKYpkD0Hzkx4KobiuzpU3yc1qOtrLG3G8cgUDIHtomoaSdY+5KgAB4HNvCPur16Df
+      XwmAh0BkI/+qVbJHmJTVdLxXuRJb656a3PgBcA9A9vEuXwY9FIIh8U7RAkCfP4zW6jW45b33
+      Mm3uAcg2us+HkrVrpa0/qRfjYHgV/lK74b4bP8A9ANkssGE9xj/80NF1CgCfBhbiUPhRRIoC
+      gKY98LEMgGzl+9pKRw+D4roXh8KrcC5YDzHNhn8HD4HIVrrfj8ATj9u+HgHgk9I6/LGhGV1l
+      DaY2foB7AHJAaUsLEifb/3/TLBtEigI4EF6NK4Ea0xv+HQyAbOd9ZAm8Sx9B5tp1S5ebh4aO
+      ssU4XNWElGd2l1/zEIhsp3k8CD77rKXLHCguw/baDdhfvWbWGz/AAMghgQ3r4ame+2eFs9Bx
+      rGI5/lT/ND4rqZ72DI8ZDIAcofv9CLa0zGkZN70hvF73LRypbEJGt+boXRPCplcmRHfJx+IY
+      /PnLM/4KpbTmwT8rV+KDUCPymrV/s7kHIMd4yssQfO47M3pOrz+MV+s34kRomeUbP8A9ADks
+      H4th8OVfwojFpn1cQvfiSFUTzpQtgmHDhn8H9wDkKE95OULPb3ng7wWAi4GFeLX+GZwuX2Lr
+      xg8wAJKg9NvNKF7UcM/P47oXe2rWYddXnkS0OODILAyAHKf7fKh44YXJU5gCwJngIvx+UQvO
+      Bc1fxmAFvhNMUvgfW4vA+m/gZudFHKhejSslNXM+pz8bfBFM0iSjt/HT7e9jaELeJshDIJIm
+      UBnCD777pNQZGABJ1fL4Umx49N4XxE5hACSVrmn48feeQDhUImf9UtZKNEVF0I+ffX89ijzO
+      b44MgFxhdWMNXnxujePrZQDkCpqmYfM3V+LpNYsdXS8DINfQdQ0/ef7r+GqDc98xxgDIVXze
+      Ivz6xaewsCroyPoYALlOZVkJXvnhM6gI+m1fFwMgV6pfUI5XfrQR5QGfrethAORay+oq8ZuX
+      NqIsYN8X7jEAcrXl9VX47UvNCJXasyfgxXBUEPpvjeF3ez/C8FjS0uUyACoYw2Pj+MPfP8a1
+      wahly2QAVFDGUxlsbe1A19VBS5bHAKjg5PIG9h3/FIdOdc/5dqMMgArWmcufY9vBsxifyM56
+      GQyACtqt0QS2tnbg6s3IrJ7/PxZ5G8dOtbYYAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
