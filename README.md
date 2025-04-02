@@ -11,7 +11,7 @@
 - 대회 기간 : 2025.02.03 ~ 2025.03.31
 - 참여 기간 : 2025.03.05 ~ 2025.03.31
 
-## 데이터
+## 데이터(train.csv)
 | #   | Column                   | Non-Null Count   | Dtype    |
 |-----|--------------------------|------------------|----------|
 | 0   | UID                      | 10000 non-null   | object   |
@@ -33,3 +33,46 @@
 | 16  | 신용 점수                 | 10000 non-null   | int64    |
 | 17  | 채무 불이행 여부          | 10000 non-null   | int64    |
 
+## EDA
+### 상관 관계
+![image](https://github.com/user-attachments/assets/7f9068e1-0bee-485c-b94e-38f35e8fea02)
+
+### 채무 불이행 여부 비율
+- 주거 형태
+  
+![image](https://github.com/user-attachments/assets/fad84d05-df51-4667-b68d-db0fce721f3a)
+
+- 대출 상환 기간
+
+![image](https://github.com/user-attachments/assets/091dd2c5-2cae-4dc3-b44d-687bf13414a8)
+
+- 현재 직장 근속 연수
+
+![image](https://github.com/user-attachments/assets/30e1d7b0-75d9-4500-b5dc-fee81167134f)
+
+- 대출 목적
+
+![image](https://github.com/user-attachments/assets/15fa6970-71cf-4c48-b9fb-d53da5778b85)
+
+=> Label Encoding 순서로 사용
+
+## 전처리
+- 파생변수 생성
+- 범주형 데이터 처리
+- 이상치 처리(원저라이징, IQR)
+- 로그 변환
+- 결측값 처리(KNNImputer)
+- 정규화(Standard Scaler)
+
+## 모델링
+```python
+sgd_model = make_pipeline(
+    StandardScaler(),
+    SGDClassifier(loss='log_loss', penalty='l2', max_iter=1000, random_state=42)
+)
+```
+
+## 결과
+- Train Score: 0.6965
+- Test Score : 0.6885
+- Public Score : 0.6637
