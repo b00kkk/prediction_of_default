@@ -57,6 +57,6 @@ sgd_model = make_pipeline(
 
 ## 결과
 - Train Score: 0.6729
-- Test Score : 0.646
+- Test Score : 0.6460
 - Public Score : 0.6706
-- Private Score : 0.6633(1등)
+- Private Score : 0.6704(1등)
