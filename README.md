@@ -65,4 +65,4 @@ sgd_model = make_pipeline(
 - 처음 참여해본 대회라 부족한 점이 많았음
 - 대회 끝난 후 코드 정리하니 발견된 오류들을 수정하니 성능이 떨어짐
 - 1등 순위의 족하는 성능을 만들기 위해 대회가 끝났지만, 전처리를 통해 성능을 비슷하게 만들음
-- 자세한 느낀점 및 배운 내용 : [링크](https://www.notion.so/1ca2f571f79c80f2beddcb08b03950de) <- `클릭`
+- 자세한 느낀점 및 배운 내용 : [링크](https://accessible-riverbed-2b7.notion.site/1ca2f571f79c80f2beddcb08b03950de) <- `클릭`
