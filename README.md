@@ -49,10 +49,10 @@
 
 ## 모델링
 ```python
-sgd_model = make_pipeline(
-    StandardScaler(),
-    SGDClassifier(loss='log_loss', penalty='l2', max_iter=1000, random_state=42)
-)
+sgd_model = SGDClassifier(loss='log_loss',
+                             penalty='l2',
+                             max_iter=1000,
+                             random_state=42)
 ```
 
 ## 결과
