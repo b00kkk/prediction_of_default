@@ -36,7 +36,12 @@
 ## 🔍 EDA
 ### 상관 관계
 ![image](https://github.com/user-attachments/assets/7f9068e1-0bee-485c-b94e-38f35e8fea02)
+### 데이터 분포 확인
+| ![image](https://github.com/user-attachments/assets/5275394f-86ed-4c69-9b96-9c9a2fef7d3f) | ![image](https://github.com/user-attachments/assets/7d62b09b-a52f-4935-8d98-6ad1fa74df45) | 
+|--------------------------------------------------------|--------------------------------------------------------|
 
+|![image](https://github.com/user-attachments/assets/ab300955-bc5d-401e-9f6b-354b90acc45a)| ![image](https://github.com/user-attachments/assets/48a27f15-f25d-4088-95e7-528b62d7187a) |
+|--------------------------------------------------------|--------------------------------------------------------|
 
 ## ✂️ 전처리
 - 파생변수 생성
