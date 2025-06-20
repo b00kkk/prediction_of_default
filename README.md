@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/955ad114-ffac-4399-a290-343765cf0ada)
 
-🏆**최종 private score 1등**
+**최종 private score 1등** (Datalake로 수상은 실패,,,)
 
 ## 📝 대회 개요
 - 공식 사이트 : [링크](https://dacon.io/competitions/official/236450/overview/description) <- `클릭`
